@@ -1,3 +1,7 @@
+/* font imports */
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@100..900&family=Jersey+10&family=Playwrite+NZ:wght@100..400&family=Press+Start+2P&display=swap");
+
+/* ------ general stylings ------ */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -13,12 +17,95 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body div {
+/* navigation header styling */
+.navigation-menu {
+  background-color: #e4e4e4;
+  height: 4.7rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
+.navigation-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+.navigation-menu li {
+  list-style: none;
+}
+.navigation-menu li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+.navigation-menu li a:hover {
+  color: rgb(16, 176, 176);
+}
 
+/* used as a wrapper component on common components to center them */
+.main-container {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* h1 heading */
 h1 {
-  font-size: 3em;
-  line-height: 1.1;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-size: 1.5rem;
+  font-style: normal;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  color: rgb(16, 176, 176);
+}
+
+/* h2 heading */
+h2 {
+  font-family: "Press Start 2P", system-ui;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* ------ page specific settings ------ */
+
+/* home screen container */
+.home-screen-container {
+  text-align: center;
+  padding: 3rem;
+  width: 65%;
+  border: 2px solid white;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  background-color: rgb(30, 30, 30);
+}
+
+/* buttons container on home screen */
+.main-buttons-container {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: rgb(36, 36, 36);
+  width: fit-content;
+  justify-content: center;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+/* buttons used on home screen for navigation */
+.main-button {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 5px;
+  transition: all 0.3s;
+  border: 1px solid rgb(30, 30, 30);
+}
+.main-button:hover {
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(160, 160, 160);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
